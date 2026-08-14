@@ -159,7 +159,7 @@ jobs:
          ${{ github.workspace }}/openwrt/feeds.conf.default
        include-hidden-files: true
       
-     - name: Apply Custom Packages from Input
+    - name: Apply Custom Packages from Input
       run: |
         cd openwrt
         PACKAGES="${{ github.event.inputs.custom_packages }}"
@@ -170,7 +170,7 @@ jobs:
           else
             echo "CONFIG_PACKAGE_${pkg}=y" >> .config
           fi
-        done   
+        done  
 
     - name: Download packages
       working-directory: ./openwrt
