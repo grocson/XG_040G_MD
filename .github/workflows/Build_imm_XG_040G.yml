@@ -4,6 +4,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
+      custom_packages:
+        description: '手動輸入增刪套件 (例如:luci-app-frpc -luci-app-lucky)'
+        required: false
+    inputs:
       ssh:
         description: ' ← 选择是否开启 SSH 调试专业人员使用'
         required: false
