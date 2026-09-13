@@ -11,9 +11,6 @@ curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turbo
 git clone https://github.com/gSpotx2f/luci-app-temp-status package/luci-app-temp-status
 git clone https://github.com/gSpotx2f/luci-app-cpu-perf package/luci-app-cpu-perf
 
-# QModem
-echo "src-git qmodem https://github.com/FUjr/QModem.git;main" >> "$GITHUB_WORKSPACE/openwrt/feeds.conf.default"
-
 # luci-app-airoha-npu
 if [ ! -d "package/luci-app-airoha-npu" ]; then
     git clone https://github.com/bingoguo93/luci-app-airoha-npu package/luci-app-airoha-npu
